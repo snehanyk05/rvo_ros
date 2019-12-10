@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>rvo_ros</name>
+  <name>nav_rvo</name>
   <version>0.0.0</version>
   <description>The rvo package for robot planning </description>
 
