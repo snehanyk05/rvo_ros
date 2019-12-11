@@ -26,7 +26,7 @@ include_directories(
 
 add_library(rvolib SHARED rvo_lib/nav_rvo.cpp rvo_lib/RVOSimulator.cpp rvo_lib/Agent.cpp rvo_lib/KdTree.cpp rvo_lib/Obstacle.cpp)
 
-add_executable(rvo_node src/rvo_node.cpp)
-target_link_libraries(rvo_node ${catkin_LIBRARIES} rvolib)
+add_executable(nav_rvo_node src/rvo_node.cpp)
+target_link_libraries(nav_rvo_node ${catkin_LIBRARIES} rvolib)
 
 #target_link_libraries(rvo_test RVO)
