@@ -80,15 +80,11 @@ void rvo_velCallback(const gazebo_msgs::ModelStates::ConstPtr& sub_msg)
 {
     // std::cout<<num_agent<<std::endl;
     rvo->updateState_gazebo(sub_msg); // read the message
-<<<<<<< HEAD
-    rvo->randGoal(0, 4, 0, 4, "random");   // set the goals
-=======
     if (motion_model == "default")
         rvo->setGoal(rvo_goals);
     else if (motion_model == "random")
         rvo->randGoal(limit_goal, "default");
 
->>>>>>> master
     rvo->setInitial();
     rvo->setPreferredVelocities();
 
