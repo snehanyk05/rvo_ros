@@ -10,7 +10,7 @@ int main(int argc, char **argv)
     ros::ServiceServer service = n.advertiseService("set_rvo_goals", set_goals);
     ros::Rate loop_rate(10);
 
-    if ((argc > 1) && (argc % 2 == 0))
+    if ((argc > 1) && (argc % 2 == 1))
     {
         int num_init_point = argc - 1;
         for (int i = 1; i < num_init_point + 1; i = i + 2)
